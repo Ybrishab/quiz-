@@ -30,6 +30,7 @@ let score = 0;
 let time = 15;
 let timerInterval;
 
+// Get elements
 const questionEl = document.getElementById('question');
 const answersEls = document.querySelectorAll('.answer');
 const a_text = document.getElementById('a_text');
@@ -39,6 +40,18 @@ const d_text = document.getElementById('d_text');
 const timerDisplay = document.getElementById('time');
 const submitBtn = document.getElementById('submit');
 const quiz = document.getElementById('quiz');
+
+// Welcome screen logic
+const welcomeScreen = document.getElementById('welcome');
+const quizContainer = document.getElementById('quiz-container');
+const startBtn = document.getElementById('start-btn');
+
+// Start quiz on button click
+startBtn.addEventListener('click', () => {
+  welcomeScreen.style.display = 'none';
+  quizContainer.style.display = 'block';
+  loadQuiz();
+});
 
 function loadQuiz() {
   deselectAnswers();
@@ -94,5 +107,3 @@ function showResult() {
   `;
 }
 
-// Start the quiz
-loadQuiz();
