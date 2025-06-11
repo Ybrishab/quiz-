@@ -1,53 +1,54 @@
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: Arial, sans-serif;
   background: #f0f2f5;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   height: 100vh;
   margin: 0;
 }
 
+.welcome-screen,
 .quiz-container {
-  background: white;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 500px;
-}
-
-.quiz-header {
-  margin-bottom: 1rem;
-}
-
-.quiz-header h2 {
-  margin-bottom: 1rem;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-ul li {
-  margin-bottom: 0.75rem;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
 }
 
 button {
-  background-color: #4caf50;
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 1rem;
+  background: #007bff;
   color: white;
   border: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 5px;
+  border-radius: 6px;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #45a049;
+  background: #0056b3;
+}
+
+.quiz-header {
+  text-align: left;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 10px 0;
 }
 
 #timer {
-  margin-top: 1rem;
   font-weight: bold;
+  margin-top: 20px;
 }
+
