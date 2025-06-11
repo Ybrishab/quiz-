@@ -4,26 +4,37 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Modern Quiz App</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <!-- Welcome Screen -->
-  <div class="welcome-container" id="welcome">
-    <h1>Welcome to the Modern Quiz App</h1>
-    <p>Test your knowledge by taking this quick quiz!</p>
+  <div id="welcome" class="welcome-screen">
+    <h1>Welcome to the Quiz</h1>
     <button id="start-btn">Start Quiz</button>
   </div>
 
   <!-- Quiz Screen -->
-  <div class="quiz-container" id="quiz-container" style="display: none;">
+  <div id="quiz-container" class="quiz-container" style="display: none;">
     <div id="quiz">
       <div class="quiz-header">
-        <h2 id="question">Question text</h2>
+        <h2 id="question">Question Text</h2>
         <ul>
-          <li><input type="radio" name="answer" id="a" class="answer"><label for="a" id="a_text"></label></li>
-          <li><input type="radio" name="answer" id="b" class="answer"><label for="b" id="b_text"></label></li>
-          <li><input type="radio" name="answer" id="c" class="answer"><label for="c" id="c_text"></label></li>
-          <li><input type="radio" name="answer" id="d" class="answer"><label for="d" id="d_text"></label></li>
+          <li>
+            <input type="radio" name="answer" id="a" class="answer" />
+            <label for="a" id="a_text">Answer A</label>
+          </li>
+          <li>
+            <input type="radio" name="answer" id="b" class="answer" />
+            <label for="b" id="b_text">Answer B</label>
+          </li>
+          <li>
+            <input type="radio" name="answer" id="c" class="answer" />
+            <label for="c" id="c_text">Answer C</label>
+          </li>
+          <li>
+            <input type="radio" name="answer" id="d" class="answer" />
+            <label for="d" id="d_text">Answer D</label>
+          </li>
         </ul>
         <p id="timer">Time Left: <span id="time">15</span>s</p>
       </div>
