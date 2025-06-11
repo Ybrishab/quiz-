@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Modern Quiz App</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <div class="quiz-container">
+  <!-- Welcome Screen -->
+  <div class="welcome-container" id="welcome">
+    <h1>Welcome to the Modern Quiz App</h1>
+    <p>Test your knowledge by taking this quick quiz!</p>
+    <button id="start-btn">Start Quiz</button>
+  </div>
+
+  <!-- Quiz Screen -->
+  <div class="quiz-container" id="quiz-container" style="display: none;">
     <div id="quiz">
       <div class="quiz-header">
         <h2 id="question">Question text</h2>
@@ -22,6 +30,7 @@
       <button id="submit">Submit</button>
     </div>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
